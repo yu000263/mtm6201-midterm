@@ -9,33 +9,40 @@
     <title>Steven Yu Mid-term</title>
 </head>
 <body>
-  <div id="wrapper">
-    <header>
-        <div class="header">
-            <div class="header-logo">
-                <img src="./images/logo.png" alt="logo" class="logo">
+  <header>
+    <div class="wrapper" id="header-menu">
+      <div class="header-logo">
+          <img src="./images/logo.png" alt="logo" class="logo">
+        </div>
+        <!-- Create a responsive navigation bar with flexbox -->
+        <nav>
+          <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+
+          <div class="calender">
+            <img src="./images/calendar.png" alt="calender">
+          </div>
+
+          <div class="hamburger">
+            <img src="./images/hamburger.png" alt="hamburger">
             </div>
 
-    
-            <nav>
-                <ul class="navlist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-language">
-                <button id="en">EN</button>
-                <button id="fr">FR</button>
+        </nav>
+            <div class="language" style="border: 2px solid white; border-radius: 10px;">
+                <button id="en" style="background-color: transparent; border-color: #fff; color: #fff;">EN</button>
+                <button id="fr" style="background-color: transparent; border-color: #fff; color: #fff;">FR</button>
             </div>
-
 
         </div>
     </header>
   </div>
 
 <main>
-  <div class="hero-banner wrapper">  
+  <div class="hero-banner ">  
     <div class="slideshow-container">
       <div class="slide">
         <img src="./images/image1.jpg" alt="Image 1">
@@ -44,8 +51,8 @@
     </div>
   
     <div class="arrow">
-    <a class="prev" href="#slide4">&#706;</a>
-    <a class="next" href="#slide2">&#707;</a>
+    <a class="prev" href="#slide4" style="color: white">&#706;</a>
+    <a class="next" href="#slide2" style="color: white">&#707;</a>
     </div>
 
   
@@ -72,15 +79,15 @@
       <img src="./images/roll.jpg" alt="Image of Roll">
       <div class="image-title">Roll</div>
     </div>
-    <div class="image-container">
+    <div class="image-container img-readmore">
       <img src="./images/sushi.jpg" alt="Image of Sushi">
       <div class="image-title">Sushi</div>
     </div>
-    <div class="image-container">
+    <div class="image-container img-readmore">
       <img src="./images/sake.jpg" alt="Image of Sake">
       <div class="image-title">Sake</div>
     </div>
-    <div class="image-container">
+    <div class="image-container img-readmore">
       <img src="./images/roll.jpg" alt="Image of Roll">
       <div class="image-title">Roll</div>
     </div>
@@ -88,38 +95,40 @@
   
     <hr class="black-line">
 
-    <section class="wrapper article-section">
-      <div class="content">
+    <section class="article-section">
+      <div class="wrapper content">
         <div class="column-1">
           <div class="illustration">
             <img src="./images/illustration.png" alt="Illustration">
           </div>
-          <div class="article-info">
-            <button id="article">See articles</button>
+            <button id="article" style="border: 5px solid black; border-radius: 10px;background-color:  black; color: #fff; padding: 0 100px 0 100px;">See articles</button>
             <p>Latest updates, recipes, news, and more!</p>
-          </div>
-        </div>
+          
+        </div><!-- column-1 end here -->
+
         <div class="column-2">
+          <div class="article-img">
+            <img src="./images/image5.jpg" alt="Article Cover" style="width: 100%;">
+          </div>
           <div class="article">
             <h2>Heading</h2>
             <p>By: writer name</p>
           </div>
-          <div class="article-img">
-            <img src="./images/image5.jpg" alt="Article Cover">
-          </div>
-        </div>
-      </div>
+        </div><!-- column-2 end here -->
+      </div><!-- content end here -->
     </section>
     
     
     <hr class="black-line">
 
     <div class="customer-review">
+
+
         <div class="small-card">
           <div class="review-header">
-            <img class="profile-pic" src="./images/pro2.jpeg" alt="Profile Picture">
-            <div class="name">Jane Smith</div>
-            <div class="date">November 3, 2023</div>
+              <img class="profile-pic" src="./images/pro2.jpeg" alt="Profile Picture">
+                <div class="name">Jane Smith</div>
+                <div class="date">November 3, 2023</div>
           </div>
           <div class="stars">
             <div class="stars" style="width: 4em;"></div>
@@ -142,6 +151,9 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tellus neque. Aliquam tincidunt hendrerit tortor.
           </div>
         </div>
+
+
+        
     
         <div class="small-card">
           <div class="review-header">
@@ -156,7 +168,7 @@
             Satisfactory, but there is room for improvement.
           </div>
         </div>
-      </div>
+      </div> <!-- customer review ends here -->
 
 
 </main>
