@@ -376,6 +376,23 @@ a:hover {
   color: #000;
 }
 
+.skip-link {
+  position: absolute;
+  top: -30px;
+  text-decoration: none;
+  overflow:hidden;
+}
+
+.skip-link:focus {
+  top: auto;
+  overflow: visible;
+  padding: 10px; 
+  background-color: #FDDA1C; 
+  color: black; 
+  text-align: center;
+  text-decoration: none; 
+}
+
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -547,7 +564,8 @@ img {
 }
 
 .column-2 {
-  display: block;
+  display: grid;
+  padding: 0 10px 0 2px;
 }
 
 .article-section {
@@ -679,6 +697,166 @@ img {
     /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
+/* Contact page Style */
+
+/* Grid layout for contact info */
+.contact-us {
+  background-color: #f9f8f2;
+  padding: 30px;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contactinfo {
+  gap: 80px;
+}
+
+.message form {
+  display: flex;
+  flex-direction: column;
+}
+
+.maillist form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.maillist label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.message input,
+.message textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.maillist input,
+.maillist textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.message button {
+  border: 1px solid #1c1c1c;
+  background-color: #1c1c1c;
+  color: #f9f8f2;
+  font-family: 'quicksand';
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.maillist button {
+  border: 1px solid #1c1c1c;
+  background-color: #1c1c1c;
+  color: #f9f8f2;
+  font-family: 'quicksand';
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.message button:hover {
+  background-color: #70001a;
+  color: #f5f5f5;
+}
+
+.maillist button:hover {
+  background-color: #70001a;
+  color: #f5f5f5;
+}
+
+.business-hour table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.business-hour th,
+.business-hour td {
+  border: 1px solid #1c1c1c;
+  padding: 10px;
+  text-align: center;
+}
+
+.business-hour th {
+  background-color: #1c1c1c;
+  color: #f9f8f2;
+}
+
+.location {
+  grid-area: location;
+  text-align: left;
+}
+
+.location iframe {
+  width: 98%;
+  height: 86%;
+}
+
+.contactinfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "hours hours maillist maillist "
+    "location location message message";
+    padding-bottom: 20px;
+}
+
+/* Specify Grid layout for message */
+.message {
+  grid-area: message;
+  width: auto;
+}
+
+/* Styling and textareas for message */
+.message form input,
+.message form textarea {
+  width: 98%;
+}
+
+/* Specify Grid area for operation hours */
+.business-hour {
+  grid-area: hours;
+ 
+}
+
+.location {
+  grid-area: location;
+  width: auto;
+}
+
+.maillist {
+  grid-area: maillist;
+  width: auto;
+}
+
+
+
+ /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 /* Navlist Mobile-sized screens */
 @media screen and (max-width: 800px) {
 
@@ -723,12 +901,12 @@ img {
   .small-card {
     display: none;
   }
-.img-readmore {
+  .img-readmore {
   display: none;
+  }
+
+  .arrow {
+  display: none;
+  }
 }
 
-.arrow {
-  display: none;
-}
-
-}
