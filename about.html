@@ -63,10 +63,10 @@
 
     </div>
   </header>
-  </div>
 
 
-  <body>
+
+
 
 
     <div class="longbanner">
@@ -82,7 +82,7 @@
 
 
 
-      <div class="chef-container" aria-label="main">
+      <div class="chef-container" >
 
         <div class="chef" role="main" id="chef">
           <picture>
@@ -94,7 +94,7 @@
 
         </div><!-- chef ends here -->
 
-        <div class="chef-text" aria-label="A paragraph about us">
+        <div class="chef-text" >
           <h2>About Us</h2>
           <p>Asahina Sushi, dedicated to creating a truly unique and luxurious dining experience. Asahina Sushi is
             renowned for its exceptional expertise in the art of Omasake-style sushi and we are commitment to providing
@@ -135,6 +135,7 @@
             <source srcset="./images/image3-m.jpg" media="(max-width: 800px)">
             <source srcset="./images/image3.jpg" media="(min-width: 800px)">
           <img src="./images/image3.jpg" alt="A photo of food" aria-label="A photo displaying luxurious sushi">
+        </picture>
         </div>
 
         <div class="vision-logo">
@@ -150,7 +151,7 @@
             <source srcset="./images/sake-m.jpg" media="(max-width: 800px)">
             <source srcset="./images/sake.jpg" media="(min-width: 800px)">
           <img src="./images/sake.jpg" alt="A photo of sake" aria-label="A photo displaying luxurious sake">
-
+        </picture>
           <button type="button" class="readmore">Readmore</button>
         </div>
 
@@ -176,10 +177,10 @@
 
 
 
-  <div class="footer" role="contentinfo" id="footer">
-    <div class="column address">
+  <div class="footer" id="footer" role="contentinfo">
+    <div class="column address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <h3>Address</h3>
-      <p>4160 Richmond Rd, Ottawa, ON</p>
+      <span itemprop="streetAddress">4160 Richmond Rd</span>
     </div>
 
     <div class="divider"></div>
@@ -203,21 +204,20 @@
           <i class="social-icon fab fa-youtube"></i>
         </a>
       </div>
+      
     </div>
 
     <div class="divider"></div>
 
-    <div class="column contact">
+    <div class="column contact" itemscope itemtype="https://schema.org/ContactPoint">
       <h3>Contact</h3>
-      <p>Tel: +1 (123) 456-7890</p>
-      <p>Email: info@example.com</p>
+      <span itemprop="telephone">Tel: +1 (343) 790-0000</span><br>
+      <span itemprop="email">Email: info@asahina.com</span>
     </div>
   </div>
 
   <div class="copyright">
     &copy; 2023 Asahinasushi
   </div>
-
-
 
 </html>

@@ -787,11 +787,11 @@ img {
 
 .copyright {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
+  justify-content: flex-end;
+  font-size: 20px;
   background-color: black;
   color: #ffffff;
+  padding: 10px;
 }
 
 .social-icon {
