@@ -790,7 +790,8 @@ img {
 }
 
 .contactinfo {
-  gap: 80px;
+  gap: 50px;
+  margin-bottom: 40px;
 }
 
 .message form {
@@ -979,6 +980,7 @@ img {
     text-align: center;
     align-items: center;
     padding: 20px 0 20px 0;
+    margin-bottom: 20px;
 }
 
 .vision-img {
