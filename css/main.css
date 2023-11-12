@@ -498,6 +498,34 @@ nav ul {
   text-align: center;
 }
 
+.calender a:hover {
+  background-color: transparent;
+}
+
+.hamburger a:hover {
+  background-color: transparent;
+}
+
+.header-logo a:hover {
+  transform: scale(1.1) rotate(360deg); 
+  transition: transform 0.3s ease; 
+  border: 2px solid #ccc;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+#article {
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color:  black;
+  color: #fff;
+  padding: 0 100px 0 100px;
+}
+
+#article:hover {
+  background-color: white;
+  color: #000;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -560,6 +588,7 @@ nav ul {
   grid-template-columns: repeat(3, 2fr);
   grid-gap: 20px;
   justify-content: center;
+
 }
 
 .image-container {
@@ -583,10 +612,15 @@ img {
 /* Article Section */
 
 
+
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr; /* Defines two columns with the desired proportions */
   gap: 20px; /* Adjust the gap between columns if needed */
+}
+
+.column-1 p {
+  text-align: center;
 }
 
 .column-2 {
@@ -602,12 +636,13 @@ img {
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* customer review */
+/* Customer review */
 
   .customer-review {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .review-card {
@@ -669,6 +704,8 @@ img {
 
   /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+  /* Footer Style */
+
   .footer {
     background-color: #000;
     color: #fff;
@@ -718,6 +755,22 @@ img {
     font-size: 14px;
     background-color: black;
     color: #ffffff;
+  }
+
+  .social-icon {
+    font-size: 1em; 
+    margin: 0.5em; 
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .social-icon:hover {
+    animation: bounce 0.5s infinite alternate; 
+  }
+
+  @keyframes bounce {
+    to {
+      transform: translateY(-10px); 
+    }
   }
 
 
@@ -841,6 +894,8 @@ img {
   height: 86%;
 }
 
+/* Grid layout for contactinfo */
+
 .contactinfo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -851,20 +906,18 @@ img {
 }
 
 
-
-/* Specify Grid layout for message */
 .message {
   grid-area: message;
   width: auto;
 }
 
-/* Styling and textareas for message */
+
 .message form input,
 .message form textarea {
   width: 98%;
 }
 
-/* Specify Grid area for operation hours */
+
 .business-hour {
   grid-area: hours;
   list-style: none;
@@ -1092,6 +1145,11 @@ img {
   text-align: center;
   }
 
+  .image-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
   
 
 }

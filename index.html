@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
 
   <title>Steven Yu Mid-term</title>
 </head>
@@ -24,7 +25,13 @@
   <header>
     <div class="wrapper" id="header-menu" role="heading">
       <div class="header-logo">
-        <img src="./images/logo.png" alt="logo" class="logo">
+        <a href="./index.html">
+        <picture>
+          <source srcset="./images/logo-m.png" media="(max-width: 800px)">
+          <source srcset="./images/logo.png" media="(min-width: 800px)">
+        <img src="./images/logo.png" alt="logo" class="logo" aria-label="A Logo of Asahina Sushi">
+        </picture>
+      </a>
       </div>
       <!-- Create a responsive navigation bar with flexbox -->
       <nav aria-label="navigation">
@@ -34,13 +41,16 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
 
-
         <div class="calender">
-          <img src="./images/calender.png" alt="Calender" aria-label="Booking">
+          <a href="./contact.html">
+          <img src="../images/calender.png" alt="calender">
+          </a>
         </div>
 
         <div class="hamburger">
-          <img src="./images/hamburger.png" alt="Hamburger" aria-label="Menu">
+          <a href="./about.html">
+          <img src="../images/hamburger.png" alt="hamburger">
+        </a>
         </div>
 
       </nav>
@@ -57,8 +67,11 @@
     <div class="hero-banner" id="hero-banner" aria-label="A photo of sushi roll" role="img">
       <div class="slideshow-container">
         <div class="slide">
-          <img src="./images/image1.jpg" alt="Image 1">
-
+          <picture>
+            <source srcset="./images/image1-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/image1.jpg" media="(min-width: 800px)">
+            <img src="./images/image1.jpg" alt="Image 1">
+          </picture>
         </div>
       </div>
 
@@ -78,33 +91,58 @@
 
     </div>
 
-    <section class="wrapper image-showcase" id="image-showcase" role="main">
-      <h1></h1>
+    <div class="wrapper image-showcase" id="image-showcase" role="main">
+
       <div class="image-container">
-        <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
+        <picture>
+          <source srcset="./images/sushi-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/sushi.jpg" media="(min-width: 800px)">
+          <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
+        </picture>
         <div class="image-title">Sushi</div>
       </div>
       <div class="image-container">
-        <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
+        <picture>
+          <source srcset="./images/sake-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/sake.jpg" media="(min-width: 800px)">
+          <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
+        </picture>
         <div class="image-title">Sake</div>
       </div>
       <div class="image-container">
-        <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
+
+        <picture>
+          <source srcset="./images/roll-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/roll.jpg" media="(min-width: 800px)">
+          <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
+        </picture>
         <div class="image-title">Roll</div>
       </div>
       <div class="image-container img-readmore">
-        <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
-        <div class="image-title">Sushi</div>
+        <picture>
+          <source srcset="./images/sashimi-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/sashimi.jpg" media="(min-width: 800px)">
+          <img src="./images/sashimi.jpg" alt="Image of sashimi" aria-label="A photo of sashimi" role="img">
+        </picture>
+        <div class="image-title">Sashimii</div>
       </div>
       <div class="image-container img-readmore">
-        <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
-        <div class="image-title">Sake</div>
+        <picture>
+          <source srcset="./images/soup-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/soup.jpg" media="(min-width: 800px)">
+          <img src="./images/soup.jpg" alt="Image of Soup" aria-label="A photo of soup" role="img">
+        </picture>
+        <div class="image-title">Soup</div>
       </div>
       <div class="image-container img-readmore">
-        <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
-        <div class="image-title">Roll</div>
+        <picture>
+          <source srcset="./images/udon-m.jpg" media="(max-width: 800px)">
+          <source srcset="./images/udon.jpg" media="(min-width: 800px)">
+          <img src="./images/udon.jpg" alt="Image of Udon" aria-label="A photo of udon" role="img">
+        </picture>
+        <div class="image-title">Udon</div>
       </div>
-    </section>
+    </div>
 
     <hr class="black-line">
 
@@ -112,18 +150,29 @@
       <div class="wrapper content">
         <div class="column-1">
           <div class="illustration">
-            <img src="./images/illustration.png" alt="Illustration" aria-label="Illustration">
+            <picture>
+              <source srcset="./images/illustration-m.png" media="(max-width: 800px)">
+              <source srcset="./images/illustration.png" media="(min-width: 800px)">
+              <img src="./images/illustration.png" alt="Illustration" aria-label="Illustration">
+            </picture>
           </div>
-          <button id="article"
-            style="border: 5px solid black; border-radius: 10px;background-color:  black; color: #fff; padding: 0 100px 0 100px;"
-            aria-label="Read More about Articles">See articles</button>
+          <a href="./about.html">
+          <button id="article" type="button" aria-label="Read More about Articles">See articles</button></a>
           <p>Latest updates, recipes, news, and more!</p>
 
         </div><!-- column-1 end here -->
 
         <div class="column-2">
           <div class="article-img">
-            <img src="./images/image5.jpg" alt="Article Cover" aria-label="Article Image" role="img">
+
+            <picture>
+              <source srcset="./images/article-m.jpg" media="(max-width: 800px)">
+              <source srcset="./images/article.jpg" media="(min-width: 800px)">
+            <img src="./images/article.jpg" alt="Article Cover" aria-label="Article Image" role="img">
+            </picture>
+
+
+
           </div>
           <div class="article">
             <h1>Heading</h1>
@@ -141,7 +190,11 @@
 
       <div class="small-card">
         <div class="review-header">
+          <picture>
+            <source srcset="./images/pro2-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/pro2.jpg" media="(min-width: 800px)">
           <img class="profile-pic" src="./images/pro2.jpg" alt="Profile Picture">
+          </picture>
           <div class="name">Jane Smith</div>
           <div class="date">November 3, 2023</div>
         </div>
@@ -155,7 +208,11 @@
 
       <div class="review-card">
         <div class="review-header">
+          <picture>
+            <source srcset="./images/pro1-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/pro1.jpg" media="(min-width: 800px)">
           <img class="profile-pic" src="./images/pro1.jpg" alt="Profile Picture">
+        </picture>
           <div class="name">John Doe</div>
           <div class="date">November 4, 2023</div>
         </div>
@@ -173,7 +230,11 @@
 
       <div class="small-card">
         <div class="review-header">
+          <picture>
+            <source srcset="./images/pro3-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/pro3.jpg" media="(min-width: 800px)">
           <img class="profile-pic" src="./images/pro3.jpg" alt="Profile Picture">
+          </picture>
           <div class="name">Robert Johnson</div>
           <div class="date">November 5, 2023</div>
         </div>

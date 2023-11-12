@@ -24,9 +24,16 @@
 
   <header>
     <div class="wrapper" id="header-menu">
+
       <div class="header-logo">
-        <img src="./images/logo.png" alt="logo" class="logo">
-      </div>
+        <a href="./index.html">
+          <picture>
+            <source srcset="./images/logo-m.png" media="(max-width: 800px)">
+            <source srcset="./images/logo.png" media="(min-width: 800px)">
+          <img src="./images/logo.png" alt="logo" class="logo" aria-label="A Logo of Asahina Sushi">
+          </picture>
+        </a>
+      </div> <!-- header logo -->
       <!-- Create a responsive navigation bar with flexbox -->
       <nav>
         <ul class="navlist">
@@ -37,11 +44,15 @@
 
 
         <div class="calender">
+          <a href="./contact.html">
           <img src="../images/calender.png" alt="calender">
+          </a>
         </div>
 
         <div class="hamburger">
+          <a href="./about.html">
           <img src="../images/hamburger.png" alt="hamburger">
+        </a>
         </div>
 
       </nav>
@@ -59,7 +70,11 @@
 
 
     <div class="longbanner">
+      <picture>
+        <source srcset="./images/long-m.jpg" media="(max-width: 800px)">
+        <source srcset="./images/long.jpg" media="(min-width: 800px)">
       <img src="./images/long.jpg" alt="long banner" aria-label="A photo of different kinds of sake" role="img">
+      </picture>
     </div>
 
     <div class="wrapper" role="banner">
@@ -70,8 +85,11 @@
       <div class="chef-container" aria-label="main">
 
         <div class="chef" role="main" id="chef">
+          <picture>
+            <source srcset="./images/chef-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/chef.jpg" media="(min-width: 800px)">
           <img src="./images/chef.jpg" alt="chef photo" aria-label="A photo of our chef" role="img">
-
+          </picture>
 
 
         </div><!-- chef ends here -->
@@ -113,14 +131,24 @@
 
 
         <div class="vision-img">
+          <picture>
+            <source srcset="./images/image3-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/image3.jpg" media="(min-width: 800px)">
           <img src="./images/image3.jpg" alt="A photo of food" aria-label="A photo displaying luxurious sushi">
         </div>
 
         <div class="vision-logo">
+          <picture>
+            <source srcset="./images/logo-m.png" media="(max-width: 800px)">
+            <source srcset="./images/logo.png" media="(min-width: 800px)">
           <img src="./images/logo.png" alt="Our Logo" aria-label="A Logo of Asahina Sushi">
+          </picture>
         </div>
 
         <div class="vision-img-2">
+          <picture>
+            <source srcset="./images/sake-m.jpg" media="(max-width: 800px)">
+            <source srcset="./images/sake.jpg" media="(min-width: 800px)">
           <img src="./images/sake.jpg" alt="A photo of sake" aria-label="A photo displaying luxurious sake">
 
           <button type="button" class="readmore">Readmore</button>
