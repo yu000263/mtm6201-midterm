@@ -574,6 +574,7 @@ nav ul {
 .slideshow-container {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .prev,
@@ -830,6 +831,14 @@ img {
 /* Contact page Style */
 
 /* Grid layout for contact info */
+
+.longbanner {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 .contact-us {
   padding: 30px;
 }
