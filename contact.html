@@ -97,29 +97,25 @@
                 <button type="submit" class="submit">Submit</button>
               </form>
             </div>
-            <div class="business-hour" role="region">
-              <h3>Hours of operation</h3>
-              <div>
-                <ul>
-                <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                  <span itemprop="name">Asahina Sushi - </span>
-                  <span itemprop="streetAddress">4160 Richmond Rd,</span>
-                  <span itemprop="addressLocality">Ottawa, ON</span>
-                  <span itemprop="addressCountry">Canada</span>
-                  <span itemprop="postalCode">B3T 0L0</span>
-                  
-                </li>
-              </ul>
-              <ul>
-                <li itemscope itemtype="https://schema.org/ContactPoint">
-                  <span itemprop="telephone">Tel: 343-790-0000</span><br>
-                  <span itemprop="hoursAvailable">Sunday - Thursday : 12:00AM - 9:00PM</span><br>
-                  <span itemprop="hoursAvailable">Friday - Saturday : 12:00PM - 10:00PM</span>
-                </li>
-              </ul>
+            <div class="business-hour" role="region" itemscope itemtype="https://schema.org/Organization">
+              <h3 itemprop="name">Asahina Sushi</h3>
+            
+              <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">4160 Richmond Rd,</span>
+                <span itemprop="addressLocality">Ottawa, ON</span>
+                <span itemprop="addressCountry">Canada</span>
+                <span itemprop="postalCode">B3T 0L0</span>
               </div>
-
+            
+              <ul itemscope itemtype="https://schema.org/ContactPoint">
+                <li>
+                  <span itemprop="telephone">Tel: 343-790-0000</span><br>
+                  <span itemprop="hoursAvailable">Sunday - Thursday: 12:00AM - 9:00PM</span><br>
+                  <span itemprop="hoursAvailable">Friday - Saturday: 12:00PM - 10:00PM</span>
+                </li>
+              </ul>
             </div>
+            
             <div class="location" role="region">
               <h3>Location</h3>
               <iframe
