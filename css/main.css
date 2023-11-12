@@ -393,6 +393,11 @@ a:hover {
   text-decoration: none; 
 }
 
+.black-line {
+  border: 1px solid black;
+  margin: 40px 0; 
+}
+
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -552,6 +557,9 @@ img {
   max-width: 100%;
 }
 
+
+
+
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Article Section */
@@ -694,6 +702,7 @@ img {
     color: #ffffff;
   }
 
+
     /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -701,7 +710,6 @@ img {
 
 /* Grid layout for contact info */
 .contact-us {
-  background-color: #f9f8f2;
   padding: 30px;
 }
 
@@ -824,6 +832,8 @@ img {
     padding-bottom: 20px;
 }
 
+
+
 /* Specify Grid layout for message */
 .message {
   grid-area: message;
@@ -852,6 +862,67 @@ img {
   width: auto;
 }
 
+ /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* About Page Style */
+
+.chef-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "chef chef-text chef-text";
+    padding-bottom: 20px;
+}
+
+.chef {
+  grid-area: chef;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.chef-text {
+  grid-area: chef-text;
+  padding: 20px;
+  text-align: left;
+}
+
+.chef-text h2 {
+  text-align: center;
+}
+
+.readmore {
+    background-image: url('../images/more.png');
+    background-size: cover; 
+    background-color: transparent;
+    width: 150px; 
+    height: 55px; 
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.vision {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.vision-img, .vision-img-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.vision-logo {
+  align-items: center;
+  width: 210px;
+}
+
+.readmore {
+  display: none;
+}
 
 
  /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -908,5 +979,71 @@ img {
   .arrow {
   display: none;
   }
+
+  .contactinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hours"
+      "maillist"
+      "location"
+      "message";
+      padding-bottom: 20px;
+  }
+
+  .chef-container {
+    display: grid;
+    grid-template-areas:
+      "chef"
+      "chef-text";
+      padding-bottom: 20px;
+  }
+
+  .chef {
+    grid-area: chef;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    
+  }
+  
+  .chef-text {
+    grid-area: chef-text;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  .chef-text h2 {
+    text-align: center;
+  }
+
+  .vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .vision-p {
+  display: none;
+  }
+
+  .readmore {
+    display: block;
+    text-align: center;
+  }
+
+  .vision-logo {
+    display: none;
+  }
+
+  .chef-text-2 {
+    display: none;
+  }
+
+  .vision-title {
+  text-align: center;
+  }
+
 }
 
