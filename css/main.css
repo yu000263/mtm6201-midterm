@@ -399,6 +399,24 @@ a:hover {
 }
 
 
+body, p, q {
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 26px;
+}
+
+h1, button, li, h2, .image-title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -593,7 +611,7 @@ img {
   }
 
   .review-card {
-    width: 400px; /* Larger main card */
+    width: 450px; /* Larger main card */
     height: 200px;
     border: 1px solid #ccc;
     padding: 20px;
@@ -849,7 +867,17 @@ img {
 /* Specify Grid area for operation hours */
 .business-hour {
   grid-area: hours;
- 
+  list-style: none;
+}
+
+.business-hour li span {
+  text-decoration: none;
+  font-family: 'Alumni Sans', sans-serif;
+  
+}
+
+.business-hour ul {
+  list-style: none;
 }
 
 .location {

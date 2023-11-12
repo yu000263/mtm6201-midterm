@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>Steven Yu Mid-term</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <title>Steven Yu Mid-term</title>
 </head>
+
 <body>
 
-  <a href="#hero-banner" class="skip-link" aria-label="Skip to Hero banner">Skip to Hero banner</a>  
-  <a href="#image-showcase" class="skip-link" aria-label="Skip to Images showcase">Skip to Images showcase</a> 
-  <a href="#article-section" class="skip-link" aria-label="Skip to Article">Skip to Article</a> 
-  <a href="#customer-review" class="skip-link" aria-label="Skip to Customer review">Skip to Customer review</a> 
+  <a href="#hero-banner" class="skip-link" aria-label="Skip to Hero banner">Skip to Hero banner</a>
+  <a href="#image-showcase" class="skip-link" aria-label="Skip to Images showcase">Skip to Images showcase</a>
+  <a href="#article-section" class="skip-link" aria-label="Skip to Article">Skip to Article</a>
+  <a href="#customer-review" class="skip-link" aria-label="Skip to Customer review">Skip to Customer review</a>
   <a href="#footer" class="skip-link" aria-label="Skip to Footer">Skip to Footer</a>
 
   <header>
     <div class="wrapper" id="header-menu" role="heading">
       <div class="header-logo">
-          <img src="./images/logo.png" alt="logo" class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo">
+      </div>
+      <!-- Create a responsive navigation bar with flexbox -->
+      <nav aria-label="navigation">
+        <ul class="navlist">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+
+        <div class="calender">
+          <img src="./images/calender.png" alt="Calender" aria-label="Booking">
         </div>
-        <!-- Create a responsive navigation bar with flexbox -->
-        <nav aria-label="navigation">
-          <ul class="navlist">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
 
-
-          <div class="calender">
-            <img src="./images/calendar.png" alt="calender">
-          </div>
-
-          <div class="hamburger">
-            <img src="./images/hamburger.png" alt="hamburger">
-            </div>
-
-        </nav>
-            <div class="language" style="border: 2px solid white; border-radius: 10px;">
-                <button id="en" style="background-color: transparent; border-color: #fff; color: #fff;">EN</button>
-                <button id="fr" style="background-color: transparent; border-color: #fff; color: #fff;">FR</button>
-            </div>
-
+        <div class="hamburger">
+          <img src="./images/hamburger.png" alt="Hamburger" aria-label="Menu">
         </div>
-    </header>
+
+      </nav>
+      <div class="language" style="border: 2px solid white; border-radius: 10px;">
+        <button id="en" style="background-color: transparent; border-color: #fff; color: #fff;">EN</button>
+        <button id="fr" style="background-color: transparent; border-color: #fff; color: #fff;">FR</button>
+      </div>
+
+    </div>
+  </header>
   </div>
 
-<main role="banner">
-  <div class="hero-banner" id="hero-banner" aria-label="A photo of sushi roll" role="img">  
-    <div class="slideshow-container">
-      <div class="slide">
-        <img src="./images/image1.jpg" alt="Image 1">
-        
+  <main role="banner">
+    <div class="hero-banner" id="hero-banner" aria-label="A photo of sushi roll" role="img">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./images/image1.jpg" alt="Image 1">
+
+        </div>
       </div>
-    </div>
-  
-<!--     <div class="arrow">
+
+      <!--     <div class="arrow">
     <a class="prev" href="#slide4" style="color: white">&#706;</a>
     <a class="next" href="#slide2" style="color: white">&#707;</a>
     </div> -->
 
-  
-    <div class="dot-container">
-      <label for="slide1" class="dot"></label>
-      <label for="slide2" class="dot"></label>
-      <label for="slide3" class="dot"></label>
-      <label for="slide4" class="dot"></label>
-      <label for="slide5" class="dot"></label>
+
+      <div class="dot-container">
+        <label for="slide1" class="dot"></label>
+        <label for="slide2" class="dot"></label>
+        <label for="slide3" class="dot"></label>
+        <label for="slide4" class="dot"></label>
+        <label for="slide5" class="dot"></label>
+      </div>
+
     </div>
 
-  </div>
-  
-  <section class="wrapper image-showcase" id="image-showcase" role="main">
-    <div class="image-container">
-      <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
-      <div class="image-title">Sushi</div>
-    </div>
-    <div class="image-container">
-      <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
-      <div class="image-title">Sake</div>
-    </div>
-    <div class="image-container">
-      <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
-      <div class="image-title">Roll</div>
-    </div>
-    <div class="image-container img-readmore">
-      <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
-      <div class="image-title">Sushi</div>
-    </div>
-    <div class="image-container img-readmore">
-      <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
-      <div class="image-title">Sake</div>
-    </div>
-    <div class="image-container img-readmore">
-      <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
-      <div class="image-title">Roll</div>
-    </div>
-  </section>
-  
+    <section class="wrapper image-showcase" id="image-showcase" role="main">
+      <div class="image-container">
+        <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
+        <div class="image-title">Sushi</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
+        <div class="image-title">Sake</div>
+      </div>
+      <div class="image-container">
+        <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
+        <div class="image-title">Roll</div>
+      </div>
+      <div class="image-container img-readmore">
+        <img src="./images/sushi.jpg" alt="Image of Sushi" aria-label="A photo of sushi" role="img">
+        <div class="image-title">Sushi</div>
+      </div>
+      <div class="image-container img-readmore">
+        <img src="./images/sake.jpg" alt="Image of Sake" aria-label="A photo of sake" role="img">
+        <div class="image-title">Sake</div>
+      </div>
+      <div class="image-container img-readmore">
+        <img src="./images/roll.jpg" alt="Image of Sushi Roll" aria-label="A photo of sushi roll" role="img">
+        <div class="image-title">Roll</div>
+      </div>
+    </section>
+
     <hr class="black-line">
 
     <section class="article-section" id="article-section" role="complementary" aria-label="Main Article">
@@ -108,9 +113,11 @@
           <div class="illustration">
             <img src="./images/illustration.png" alt="Illustration" aria-label="Illustration">
           </div>
-            <button id="article" style="border: 5px solid black; border-radius: 10px;background-color:  black; color: #fff; padding: 0 100px 0 100px;" aria-label="Read More about Articles">See articles</button>
-            <p>Latest updates, recipes, news, and more!</p>
-          
+          <button id="article"
+            style="border: 5px solid black; border-radius: 10px;background-color:  black; color: #fff; padding: 0 100px 0 100px;"
+            aria-label="Read More about Articles">See articles</button>
+          <p>Latest updates, recipes, news, and more!</p>
+
         </div><!-- column-1 end here -->
 
         <div class="column-2">
@@ -118,72 +125,73 @@
             <img src="./images/image5.jpg" alt="Article Cover" aria-label="Article Image" role="img">
           </div>
           <div class="article">
-            <h2>Heading</h2>
+            <h1>Heading</h1>
             <p>By: writer name</p>
           </div>
         </div><!-- column-2 end here -->
       </div><!-- content end here -->
     </section>
-    
-    
+
+
     <hr class="black-line">
 
     <div class="customer-review" id="customer-review" role="region">
 
 
-        <div class="small-card">
-          <div class="review-header">
-              <img class="profile-pic" src="./images/pro2.jpg" alt="Profile Picture">
-                <div class="name">Jane Smith</div>
-                <div class="date">November 3, 2023</div>
-          </div>
-          <div class="stars">
-            <div class="stars" style="width: 4em;"></div>
-          </div>
-          <div class="comment">
-            Another great experience with this product.
-          </div>
+      <div class="small-card">
+        <div class="review-header">
+          <img class="profile-pic" src="./images/pro2.jpg" alt="Profile Picture">
+          <div class="name">Jane Smith</div>
+          <div class="date">November 3, 2023</div>
         </div>
-    
-        <div class="review-card">
-          <div class="review-header">
-            <img class="profile-pic" src="./images/pro1.jpg" alt="Profile Picture">
-            <div class="name">John Doe</div>
-            <div class="date">November 4, 2023</div>
-          </div>
-          <div class="stars">
-            <div class="stars" style="width: 4.5em;"></div>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tellus neque. Aliquam tincidunt hendrerit tortor.
-          </div>
+        <div class="stars">
+          <div class="stars" style="width: 4em;"></div>
         </div>
-
-
-        
-    
-        <div class="small-card">
-          <div class="review-header">
-            <img class="profile-pic" src="./images/pro3.jpg" alt="Profile Picture">
-            <div class="name">Robert Johnson</div>
-            <div class="date">November 5, 2023</div>
-          </div>
-          <div class="stars">
-            <div class="stars" style="width: 3.5em;"></div>
-          </div>
-          <div class="comment">
-            Satisfactory, but there is room for improvement.
-          </div>
+        <div class="comment">
+          Another great experience with this product.
         </div>
-      </div> <!-- customer review ends here -->
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img class="profile-pic" src="./images/pro1.jpg" alt="Profile Picture">
+          <div class="name">John Doe</div>
+          <div class="date">November 4, 2023</div>
+        </div>
+        <div class="stars">
+          <div class="stars" style="width: 4.5em;"></div>
+        </div>
+        <div class="comment">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tellus neque. Aliquam tincidunt hendrerit
+          tortor.
+        </div>
+      </div>
 
 
-</main>
 
-<div class="footer" id="footer" role="contentinfo">
+
+      <div class="small-card">
+        <div class="review-header">
+          <img class="profile-pic" src="./images/pro3.jpg" alt="Profile Picture">
+          <div class="name">Robert Johnson</div>
+          <div class="date">November 5, 2023</div>
+        </div>
+        <div class="stars">
+          <div class="stars" style="width: 3.5em;"></div>
+        </div>
+        <div class="comment">
+          Satisfactory, but there is room for improvement.
+        </div>
+      </div>
+    </div> <!-- customer review ends here -->
+
+
+  </main>
+
+  <div class="footer" id="footer" role="contentinfo">
     <div class="column address">
       <h3>Address</h3>
-      <p>Your Address Here</p>
+      <p>4160 Richmond Rd, Ottawa, ON</p>
     </div>
 
     <div class="divider"></div>
@@ -207,7 +215,7 @@
       <p>Email: info@example.com</p>
     </div>
   </div>
-  
+
   <div class="copyright">
     &copy; 2023 Asahinasushi
   </div>
@@ -215,6 +223,7 @@
 
 
 
-    
+
 </body>
+
 </html>
