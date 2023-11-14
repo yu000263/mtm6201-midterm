@@ -480,6 +480,12 @@ header {
   display: block;
   text-align: center;
   padding: 18px 28px;
+  color: #ffffff;
+}
+
+.navlist a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 
