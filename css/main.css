@@ -406,6 +406,8 @@ a:hover {
   color: #000;
 }
 
+
+
 .skip-link {
   position: absolute;
   top: -30px;
@@ -483,11 +485,15 @@ header {
   color: #ffffff;
 }
 
+navlist a:hover {
+  background-color: white;
+  color: #000;
+}
+
 .navlist a:visited {
   text-decoration: none;
   color: inherit;
 }
-
 
 
 nav ul {
